@@ -1,61 +1,72 @@
-# 🧪 材料数据脚本集 | Materials & AI Utility Scripts
+# 🧪 Materials & AI Utility Scripts
 
-> 能直接跑的代码 · 材料数据Pipeline · AI辅助工具 · 知识库管理
+> Ready-to-run code · Materials data pipeline · AI-assisted tools · Knowledge base management
 
-[![Python](https://img.shields.io/badge/Python-3.10+-blue)]()
-[![License](https://img.shields.io/badge/License-MIT-yellow)]()
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
+[![Status](https://img.shields.io/badge/Status-Active-brightgreen)]()
 
-## ✨ 概述
+---
 
-这是xuanhanAI工作站配套的工具脚本集。每个脚本都是独立的、可直接运行的Python工具。不依赖框架，copy即用。
+## ✨ Overview
 
-## 📦 脚本清单
+The companion utility scripts for xuanhan's AI workstation. Every script is a standalone, directly runnable Python tool. No framework dependency — copy and use.
 
-### 材料数据
-| 脚本 | 用途 |
-|------|------|
-| `data/mat_pipeline.py` | 材料数据Pipeline（集成MLflow实验追踪） |
-| `data/mat_features.py` | 材料特征工程（描述符计算、特征选择） |
+---
 
-### AI辅助
-| 脚本 | 用途 |
-|------|------|
-| `ai/review_code.py` | 代码审查（Codex+MiMo Pro API） |
-| `ai/gen_doc.py` | 文档自动生成 |
+## 📦 Script Inventory
 
-### 知识库
-| 脚本 | 用途 |
-|------|------|
-| `kb/kb_update.py` | KB批量更新 |
-| `kb/kb_validate.py` | KB格式校验 |
+### Materials Data
+| Script | Purpose |
+|--------|---------|
+| `data/mat_pipeline.py` | Materials data pipeline (MLflow experiment tracking integrated) |
+| `data/mat_features.py` | Materials feature engineering (descriptor computation, feature selection) |
+
+### AI Assistance
+| Script | Purpose |
+|--------|---------|
+| `ai/review_code.py` | Code review (Codex + MiMo Pro API) |
+| `ai/gen_doc.py` | Automated documentation generation |
+
+### Knowledge Base
+| Script | Purpose |
+|--------|---------|
+| `kb/kb_update.py` | Batch KB updates |
+| `kb/kb_validate.py` | KB format validation |
 
 ### Zotero
-| 脚本 | 用途 |
-|------|------|
-| `zotero/zotero_batch.py` | Zotero批量导入 |
-| `zotero/paper_to_kb.py` | 论文→KB（集成Stirling PDF） |
+| Script | Purpose |
+|--------|---------|
+| `zotero/zotero_batch.py` | Zotero batch import |
+| `zotero/paper_to_kb.py` | Paper → KB conversion (Stirling PDF integration) |
 
-### 系统
-| 脚本 | 用途 |
-|------|------|
-| `system/health_check.py` | 系统巡检（显存/磁盘/服务状态） |
-| `system/gpu_monitor.py` | 实时显存监控 |
+### System
+| Script | Purpose |
+|--------|---------|
+| `system/health_check.py` | System health check (VRAM / disk / service status) |
+| `system/gpu_monitor.py` | Real-time VRAM monitoring |
 
-## 🚀 使用
+---
+
+## 🚀 Usage
 
 ```bash
-# 安装依赖
+# Install dependencies
 pip install pymatgen scikit-learn mlflow requests
 
-# 运行任意脚本
+# Run any script
 python data/mat_pipeline.py
 python system/health_check.py
 ```
 
-## 🤝 贡献
+---
 
-欢迎提交PR添加新的实用脚本！
+## 🤝 Contributing
+
+PRs welcome for new utility scripts!
+
+---
 
 ## 📄 License
 
-MIT — 详见 [LICENSE](LICENSE)
+MIT — see [LICENSE](LICENSE)
